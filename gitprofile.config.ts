@@ -2,7 +2,7 @@
 
 const CONFIG = {
   github: {
-    username: 'Khanshujaath007', // Your GitHub org/user name. (This is the only required config)
+    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
@@ -13,11 +13,11 @@ const CONFIG = {
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Github',
-      mode: 'manual', // Mode can be: 'automatic' or 'manual'
+      header: 'Github Projects',
+      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 4, // How many projects to display.
+        limit: 8, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
@@ -25,41 +25,41 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['Khanshujaath007/expense-tracker','Khanshujaath007/tesseract_bot','Khanshujaath007/thinsil-ecommerce', 'Khanshujaath007/YelpCamp'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
-      header: 'Projects',
+      header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
-        // {
-        //   title: 'Yelpcamp',
-        //   description:
-        //     '',
-        //   imageUrl:
-        //     '',
-        //   link: 'https://github.com/Khanshujaath007/YelpCamp',
-        // },
-        // {
-        //   title: 'Project Name',
-        //   description:
-        //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-        //   imageUrl:
-        //     'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-        //   link: 'https://example.com',
-        // },
+        {
+          title: 'Project Name',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+          imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://example.com',
+        },
+        {
+          title: 'Project Name',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+          imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://example.com',
+        },
       ],
     },
   },
   seo: {
-    title: '',
+    title: 'Portfolio of Ariful Alam',
     description: '',
     imageURL: '',
   },
   social: {
-    linkedin: 'shujaathullakhan',
-    twitter: '',
-    mastodon: '',
+    linkedin: 'ariful-alam',
+    twitter: 'arif_szn',
+    mastodon: 'arifszn@mastodon.social',
     researchGate: '',
     facebook: '',
     instagram: '',
@@ -69,118 +69,97 @@ const CONFIG = {
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: '',
-    dev: '',
+    medium: 'arifszn',
+    dev: 'arifszn',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: '',
+    website: 'https://www.arifszn.com',
     phone: '',
-    email: 'khanshujaath007@gmail.com',
+    email: 'arifulalamszn@gmail.com',
   },
   resume: {
     fileUrl:
-      'https://drive.google.com/file/d/14-0VRiBRfu7XKr-PoXzJ-TWate6f8rFU/view?usp=drivesdk', // Empty fileUrl will hide the `Download Resume` button.
+      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'C/C++',
-    'Python',
+    'PHP',
+    'Laravel',
     'JavaScript',
     'React.js',
     'Node.js',
+    'Nest.js',
     'MySQL',
     'PostgreSQL',
     'Git',
     'Docker',
+    'PHPUnit',
     'CSS',
-    'MongoDB',
+    'Antd',
+    'Tailwind',
   ],
   experiences: [
     {
-      company: 'Directi Group (Titan Email)',
-      position: 'Engineering Intern',
-      from: 'february 2024',
+      company: 'Company Name',
+      position: 'Position',
+      from: 'September 2021',
       to: 'Present',
-      companyLink: 'https://www.directi.com/',
+      companyLink: 'https://example.com',
     },
     {
-      company: 'Neodove Technologies Pvt Ltd',
-      position: 'Full-Stack Developer',
-      from: 'November 2023',
-      to: 'January 2024',
-      companyLink: 'https://www.linkedin.com/company/neodove/posts/?feedView=all',
+      company: 'Company Name',
+      position: 'Position',
+      from: 'July 2019',
+      to: 'August 2021',
+      companyLink: 'https://example.com',
     },
   ],
   certifications: [
     {
-      name: 'Artificail Intelligence Foundations: Machine Learning',
-      body: '',
-      year: 'Dec 2022',
-      link: 'https://www.linkedin.com/learning/certificates/d204a154951e8fea41ef0660fd48de36e917622081d760134bbb41a0d7d53a19?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B8A%2FcBRV8RFuPcgeK5DQH%2FA%3D%3D',
-    },
-    {
-      name: 'Ubuntu Linux',
-      body: '',
-      year: 'Jan 2022',
-      link: 'https://ude.my/UC-9bbe0b16-8052-4278-ae69-08233d15fed8',
-    },
-    {
-      name: 'Object Oriented Programming in c++',
-      body: '',
-      year: 'Sep 2022',
-      link: 'https://www.udemy.com/certificate/UC-2754a4e1-c113-4fee-b3b5-f58773c52dc7/',
-    },
-    {
-      name: 'Mastering c++ Programming - Beginner to Advance',
-      body: '',
-      year: 'Mar 2022',
-      link: 'https://ude.my/UC-a4f6b11f-045e-411e-a46c-7fbb480732dc',
-    },
-    {
-      name: 'Java Programming: Solving Problems with Software',
-      body: '',
-      year: 'Feb 2022',
-      link: 'https://www.coursera.org/account/accomplishments/verify/N4JMDWHFB5TN',
-    },
-    {
-      name: 'Career Essentials in Software Development by Microsoft and LinkedIn',
-      body: '',
-      year: 'Dec 2022',
-      link: 'https://www.linkedin.com/learning/certificates/4831bac71d767a100195d11e834f429d7625158ffb3b30d5705d6a8a819fe416?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B8A%2FcBRV8RFuPcgeK5DQH%2FA%3D%3D',
+      name: 'Lorem ipsum',
+      body: 'Lorem ipsum dolor sit amet',
+      year: 'March 2022',
+      link: 'https://example.com',
     },
   ],
   educations: [
     {
-      institution: 'Dr. Ambedkar Institute of Technology',
-      degree: 'Bachelor of engineering',
-      from: 'Aug 2020',
-      to: 'July 2024',
+      institution: 'Institution Name',
+      degree: 'Degree',
+      from: '2015',
+      to: '2019',
+    },
+    {
+      institution: 'Institution Name',
+      degree: 'Degree',
+      from: '2012',
+      to: '2014',
     },
   ],
   publications: [
-    // {
-    //   title: 'Publication Title',
-    //   conferenceName: '',
-    //   journalName: 'Journal Name',
-    //   authors: 'John Doe, Jane Smith',
-    //   link: 'https://example.com',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    // },
-    // {
-    //   title: 'Publication Title',
-    //   conferenceName: 'Conference Name',
-    //   journalName: '',
-    //   authors: 'John Doe, Jane Smith',
-    //   link: 'https://example.com',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    // },
+    {
+      title: 'Publication Title',
+      conferenceName: '',
+      journalName: 'Journal Name',
+      authors: 'John Doe, Jane Smith',
+      link: 'https://example.com',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    },
+    {
+      title: 'Publication Title',
+      conferenceName: 'Conference Name',
+      journalName: '',
+      authors: 'John Doe, Jane Smith',
+      link: 'https://example.com',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    },
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: '', // medium | dev
-    username: '', // to hide blog section, keep it empty
+    source: 'dev', // medium | dev
+    username: 'arifszn', // to hide blog section, keep it empty
     limit: 2, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
@@ -192,7 +171,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'dim',
+    defaultTheme: 'lofi',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
